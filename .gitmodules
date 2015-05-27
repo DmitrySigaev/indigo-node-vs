@@ -1,0 +1,3 @@
+[submodule "indigo-node"]
+	path = indigo-node
+	url = https://github.com/epam/indigo-node.git

@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9baa96f4-7170-44c5-8990-7131b3d5e845}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>indigo-node\Indigo\build_scripts\indigo-release-libs.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+    <CommandLineArguments>--preset=win64-2013</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="indigo-node\indigo.js" />
+    <Content Include="indigo-node\Indigo\api\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\api\libs\readme.txt" />
+    <Content Include="indigo-node\Indigo\api\plugins\bingo\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\api\plugins\inchi\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\api\plugins\renderer\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\bingo\bingo-core-c\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\bingo\bingo-core\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\bingo\oracle\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\bingo\postgres\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\bingo\README-BUILD.txt" />
+    <Content Include="indigo-node\Indigo\bingo\sqlserver\Resources\Win\x64\readme.txt" />
+    <Content Include="indigo-node\Indigo\bingo\sqlserver\Resources\Win\x86\readme.txt" />
+    <Content Include="indigo-node\Indigo\bingo\sqlserver\sql\assembly\readme.txt" />
+    <Content Include="indigo-node\Indigo\build_scripts\bingo-oracle\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\build_scripts\bingo-postgres\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\build_scripts\bingo-sqlserver\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\build_scripts\bingo\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\build_scripts\indigo-all\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\build_scripts\indigo-inchi\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\build_scripts\indigo-renderer\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\build_scripts\indigo-utils\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\build_scripts\indigo\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\common\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\common\java\common-controls\src\com\epam\indigo\controls\images\exclamation.png" />
+    <Content Include="indigo-node\Indigo\common\java\common-controls\src\com\epam\indigo\controls\images\gga-logo.png" />
+    <Content Include="indigo-node\Indigo\common\oracle\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\graph\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\layout\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\molecule\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\reaction\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\render2d\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\third_party\cairo-src\cairo\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\third_party\cairo-src\pixman\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\third_party\inchi\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\third_party\inchi\readme.txt" />
+    <Content Include="indigo-node\Indigo\third_party\libpng-src\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\third_party\oci\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\third_party\oci\lib_generated\readme.txt" />
+    <Content Include="indigo-node\Indigo\third_party\tinyxml\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\third_party\tinyxml\readme.txt" />
+    <Content Include="indigo-node\Indigo\third_party\zlib-src\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\utils\chemdiff\META-INF\chemdiff-splash.png" />
+    <Content Include="indigo-node\Indigo\utils\indigo-cano\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\utils\indigo-deco\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\utils\indigo-depict\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\utils\legio\META-INF\legio-splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="indigo-node\Indigo\api\get_indigo_version.py" />
+    <Compile Include="indigo-node\Indigo\api\make-dotnet-wrappers.py" />
+    <Compile Include="indigo-node\Indigo\api\make-java-wrappers.py" />
+    <Compile Include="indigo-node\Indigo\api\make-python-wrappers.py" />
+    <Compile Include="indigo-node\Indigo\api\plugins\bingo\python\bingo.py" />
+    <Compile Include="indigo-node\Indigo\api\plugins\inchi\python\indigo_inchi.py" />
+    <Compile Include="indigo-node\Indigo\api\plugins\renderer\python\indigo_renderer.py" />
+    <Compile Include="indigo-node\Indigo\api\python\copy-libs.py" />
+    <Compile Include="indigo-node\Indigo\api\python\indigo.py" />
+    <Compile Include="indigo-node\Indigo\api\resources\convert.py" />
+    <Compile Include="indigo-node\Indigo\build_scripts\bingo-release.py" />
+    <Compile Include="indigo-node\Indigo\build_scripts\indigo-install-r-pack.py" />
+    <Compile Include="indigo-node\Indigo\build_scripts\indigo-make-by-libs.py" />
+    <Compile Include="indigo-node\Indigo\build_scripts\indigo-release-java-utils.py" />
+    <Compile Include="indigo-node\Indigo\build_scripts\indigo-release-libs.py" />
+    <Compile Include="indigo-node\Indigo\build_scripts\indigo-release-utils.py" />
+    <Compile Include="indigo-node\Indigo\build_scripts\indigo-update-version.py" />
+    <Compile Include="indigo-node\Indigo\common\cmake\linkhack.py" />
+    <Compile Include="indigo-node\Indigo\layout\src\templates\generate_layout_patterns.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="indigo-node" />
+    <Folder Include="indigo-node\Indigo\" />
+    <Folder Include="indigo-node\Indigo\api" />
+    <Folder Include="indigo-node\Indigo\api\libs" />
+    <Folder Include="indigo-node\Indigo\api\plugins\" />
+    <Folder Include="indigo-node\Indigo\api\plugins\bingo" />
+    <Folder Include="indigo-node\Indigo\api\plugins\bingo\python" />
+    <Folder Include="indigo-node\Indigo\api\plugins\inchi" />
+    <Folder Include="indigo-node\Indigo\api\plugins\inchi\python" />
+    <Folder Include="indigo-node\Indigo\api\plugins\renderer" />
+    <Folder Include="indigo-node\Indigo\api\plugins\renderer\python" />
+    <Folder Include="indigo-node\Indigo\api\python" />
+    <Folder Include="indigo-node\Indigo\api\resources" />
+    <Folder Include="indigo-node\Indigo\bingo" />
+    <Folder Include="indigo-node\Indigo\bingo\bingo-core" />
+    <Folder Include="indigo-node\Indigo\bingo\bingo-core-c" />
+    <Folder Include="indigo-node\Indigo\bingo\oracle" />
+    <Folder Include="indigo-node\Indigo\bingo\postgres" />
+    <Folder Include="indigo-node\Indigo\bingo\sqlserver\" />
+    <Folder Include="indigo-node\Indigo\bingo\sqlserver\Resources\" />
+    <Folder Include="indigo-node\Indigo\bingo\sqlserver\Resources\Win\" />
+    <Folder Include="indigo-node\Indigo\bingo\sqlserver\Resources\Win\x64" />
+    <Folder Include="indigo-node\Indigo\bingo\sqlserver\Resources\Win\x86" />
+    <Folder Include="indigo-node\Indigo\bingo\sqlserver\sql\" />
+    <Folder Include="indigo-node\Indigo\bingo\sqlserver\sql\assembly" />
+    <Folder Include="indigo-node\Indigo\build_scripts" />
+    <Folder Include="indigo-node\Indigo\build_scripts\bingo" />
+    <Folder Include="indigo-node\Indigo\build_scripts\bingo-oracle" />
+    <Folder Include="indigo-node\Indigo\build_scripts\bingo-postgres" />
+    <Folder Include="indigo-node\Indigo\build_scripts\bingo-sqlserver" />
+    <Folder Include="indigo-node\Indigo\build_scripts\indigo" />
+    <Folder Include="indigo-node\Indigo\build_scripts\indigo-all" />
+    <Folder Include="indigo-node\Indigo\build_scripts\indigo-inchi" />
+    <Folder Include="indigo-node\Indigo\build_scripts\indigo-renderer" />
+    <Folder Include="indigo-node\Indigo\build_scripts\indigo-utils" />
+    <Folder Include="indigo-node\Indigo\common" />
+    <Folder Include="indigo-node\Indigo\common\cmake" />
+    <Folder Include="indigo-node\Indigo\common\java\" />
+    <Folder Include="indigo-node\Indigo\common\java\common-controls\" />
+    <Folder Include="indigo-node\Indigo\common\java\common-controls\src\" />
+    <Folder Include="indigo-node\Indigo\common\java\common-controls\src\com\" />
+    <Folder Include="indigo-node\Indigo\common\java\common-controls\src\com\epam\" />
+    <Folder Include="indigo-node\Indigo\common\java\common-controls\src\com\epam\indigo\" />
+    <Folder Include="indigo-node\Indigo\common\java\common-controls\src\com\epam\indigo\controls\" />
+    <Folder Include="indigo-node\Indigo\common\java\common-controls\src\com\epam\indigo\controls\images" />
+    <Folder Include="indigo-node\Indigo\common\oracle" />
+    <Folder Include="indigo-node\Indigo\graph" />
+    <Folder Include="indigo-node\Indigo\layout" />
+    <Folder Include="indigo-node\Indigo\layout\src\" />
+    <Folder Include="indigo-node\Indigo\layout\src\templates" />
+    <Folder Include="indigo-node\Indigo\molecule" />
+    <Folder Include="indigo-node\Indigo\reaction" />
+    <Folder Include="indigo-node\Indigo\render2d" />
+    <Folder Include="indigo-node\Indigo\third_party\" />
+    <Folder Include="indigo-node\Indigo\third_party\cairo-src\" />
+    <Folder Include="indigo-node\Indigo\third_party\cairo-src\cairo" />
+    <Folder Include="indigo-node\Indigo\third_party\cairo-src\pixman" />
+    <Folder Include="indigo-node\Indigo\third_party\inchi" />
+    <Folder Include="indigo-node\Indigo\third_party\libpng-src" />
+    <Folder Include="indigo-node\Indigo\third_party\oci" />
+    <Folder Include="indigo-node\Indigo\third_party\oci\lib_generated" />
+    <Folder Include="indigo-node\Indigo\third_party\tinyxml" />
+    <Folder Include="indigo-node\Indigo\third_party\zlib-src" />
+    <Folder Include="indigo-node\Indigo\utils\" />
+    <Folder Include="indigo-node\Indigo\utils\chemdiff\" />
+    <Folder Include="indigo-node\Indigo\utils\chemdiff\META-INF" />
+    <Folder Include="indigo-node\Indigo\utils\indigo-cano" />
+    <Folder Include="indigo-node\Indigo\utils\indigo-deco" />
+    <Folder Include="indigo-node\Indigo\utils\indigo-depict" />
+    <Folder Include="indigo-node\Indigo\utils\legio\" />
+    <Folder Include="indigo-node\Indigo\utils\legio\META-INF" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
