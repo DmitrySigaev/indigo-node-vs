@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3e8cdcfe-05fb-439d-863f-34825a6c0393}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>indigo-node\build.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="gcom.txt" />
+    <Content Include="README.md" />
+    <Content Include="indigo-node\package.json" />
+    <Content Include="indigo-node\LICENSE.md" />
+    <Content Include="indigo-node\README.md" />
+    <Compile Include="indigo-node\build.js" />
+    <Compile Include="indigo-node\configureIndigo.js" />
+    <Compile Include="indigo-node\indigo.js" />
+    <Content Include="indigo-node\Indigo\README.md" />
+    <Content Include="indigo-node\Indigo\api\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\api\CHANGELOG.md" />
+    <Content Include="indigo-node\Indigo\bingo\README-BUILD.txt" />
+    <Content Include="indigo-node\Indigo\bingo\CHANGELOG.md" />
+    <Content Include="indigo-node\Indigo\common\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\graph\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\layout\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\molecule\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\reaction\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\render2d\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\api\java\pom.xml" />
+    <Content Include="indigo-node\Indigo\api\libs\readme.txt" />
+    <Content Include="indigo-node\Indigo\api\resources\abbreviations.xml" />
+    <Content Include="indigo-node\Indigo\api\plugins\bingo\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\api\plugins\inchi\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\api\plugins\renderer\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\api\plugins\bingo\java\pom.xml" />
+    <Content Include="indigo-node\Indigo\api\plugins\inchi\java\pom.xml" />
+    <Content Include="indigo-node\Indigo\api\plugins\renderer\java\pom.xml" />
+    <Content Include="indigo-node\Indigo\bingo\bingo-core\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\bingo\bingo-core-c\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\bingo\oracle\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\bingo\postgres\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\bingo\postgres\README-BUILD.md" />
+    <Content Include="indigo-node\Indigo\bingo\postgres\README.md" />
+    <Content Include="indigo-node\Indigo\bingo\sqlserver\Resources\Win\x64\readme.txt" />
+    <Content Include="indigo-node\Indigo\bingo\sqlserver\Resources\Win\x86\readme.txt" />
+    <Content Include="indigo-node\Indigo\bingo\sqlserver\sql\assembly\readme.txt" />
+    <Content Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeCache.txt" />
+    <Content Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\install_manifest.txt" />
+    <Content Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\install_manifest_shared.txt" />
+    <Content Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\TargetDirectories.txt" />
+    <Content Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\renderer\indigo-renderer-test.png" />
+    <Content Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\Testing\Temporary\CTestCostData.txt" />
+    <Content Include="indigo-node\Indigo\build_scripts\bingo\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\build_scripts\bingo-oracle\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\build_scripts\bingo-postgres\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\build_scripts\bingo-sqlserver\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\build_scripts\indigo\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\build_scripts\indigo-all\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\build_scripts\indigo-inchi\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\build_scripts\indigo-renderer\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\build_scripts\indigo-utils\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\common\oracle\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\common\java\common-controls\build.xml" />
+    <Content Include="indigo-node\Indigo\common\java\common-controls\nbproject\build-impl.xml" />
+    <Content Include="indigo-node\Indigo\common\java\common-controls\nbproject\project.xml" />
+    <Content Include="indigo-node\Indigo\common\java\common-controls\src\com\epam\indigo\controls\images\exclamation.png" />
+    <Content Include="indigo-node\Indigo\common\java\common-controls\src\com\epam\indigo\controls\images\gga-logo.png" />
+    <Content Include="indigo-node\Indigo\third_party\inchi\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\third_party\inchi\readme.txt" />
+    <Content Include="indigo-node\Indigo\third_party\libpng-src\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\third_party\oci\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\third_party\tinyxml\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\third_party\tinyxml\readme.txt" />
+    <Content Include="indigo-node\Indigo\third_party\zlib-src\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\third_party\cairo-src\cairo\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\third_party\cairo-src\pixman\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\third_party\oci\lib_generated\readme.txt" />
+    <Content Include="indigo-node\Indigo\utils\chemdiff\build.xml" />
+    <Content Include="indigo-node\Indigo\utils\indigo-cano\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\utils\indigo-deco\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\utils\indigo-depict\CMakeLists.txt" />
+    <Content Include="indigo-node\Indigo\utils\legio\build.xml" />
+    <Content Include="indigo-node\Indigo\utils\chemdiff\META-INF\chemdiff-splash.png" />
+    <Content Include="indigo-node\Indigo\utils\chemdiff\nbproject\build-impl.xml" />
+    <Content Include="indigo-node\Indigo\utils\chemdiff\nbproject\project.xml" />
+    <Content Include="indigo-node\Indigo\utils\legio\META-INF\legio-splash.png" />
+    <Content Include="indigo-node\Indigo\utils\legio\nbproject\build-impl.xml" />
+    <Content Include="indigo-node\Indigo\utils\legio\nbproject\project.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="indigo-node" />
+    <Folder Include="indigo-node\Indigo" />
+    <Folder Include="indigo-node\Indigo\api" />
+    <Folder Include="indigo-node\Indigo\api\dotnet" />
+    <Folder Include="indigo-node\Indigo\api\dotnet\Properties" />
+    <Folder Include="indigo-node\Indigo\api\java" />
+    <Folder Include="indigo-node\Indigo\api\java\src" />
+    <Folder Include="indigo-node\Indigo\api\java\src\main" />
+    <Folder Include="indigo-node\Indigo\api\java\src\main\java" />
+    <Folder Include="indigo-node\Indigo\api\java\src\main\java\com" />
+    <Folder Include="indigo-node\Indigo\api\java\src\main\java\com\epam" />
+    <Folder Include="indigo-node\Indigo\api\java\src\main\java\com\epam\indigo" />
+    <Folder Include="indigo-node\Indigo\api\libs" />
+    <Folder Include="indigo-node\Indigo\api\libs\shared" />
+    <Folder Include="indigo-node\Indigo\api\libs\shared\Win" />
+    <Folder Include="indigo-node\Indigo\api\libs\shared\Win\x64" />
+    <Folder Include="indigo-node\Indigo\api\plugins" />
+    <Folder Include="indigo-node\Indigo\api\plugins\bingo" />
+    <Folder Include="indigo-node\Indigo\api\plugins\bingo\dotnet" />
+    <Folder Include="indigo-node\Indigo\api\plugins\bingo\dotnet\Properties" />
+    <Folder Include="indigo-node\Indigo\api\plugins\bingo\java" />
+    <Folder Include="indigo-node\Indigo\api\plugins\bingo\java\src" />
+    <Folder Include="indigo-node\Indigo\api\plugins\bingo\java\src\main" />
+    <Folder Include="indigo-node\Indigo\api\plugins\bingo\java\src\main\java" />
+    <Folder Include="indigo-node\Indigo\api\plugins\bingo\java\src\main\java\com" />
+    <Folder Include="indigo-node\Indigo\api\plugins\bingo\java\src\main\java\com\epam" />
+    <Folder Include="indigo-node\Indigo\api\plugins\bingo\java\src\main\java\com\epam\indigo" />
+    <Folder Include="indigo-node\Indigo\api\plugins\bingo\python" />
+    <Folder Include="indigo-node\Indigo\api\plugins\bingo\src" />
+    <Folder Include="indigo-node\Indigo\api\plugins\bingo\tests" />
+    <Folder Include="indigo-node\Indigo\api\plugins\bingo\tests\c" />
+    <Folder Include="indigo-node\Indigo\api\plugins\inchi" />
+    <Folder Include="indigo-node\Indigo\api\plugins\inchi\dotnet" />
+    <Folder Include="indigo-node\Indigo\api\plugins\inchi\dotnet\Properties" />
+    <Folder Include="indigo-node\Indigo\api\plugins\inchi\java" />
+    <Folder Include="indigo-node\Indigo\api\plugins\inchi\java\src" />
+    <Folder Include="indigo-node\Indigo\api\plugins\inchi\java\src\main" />
+    <Folder Include="indigo-node\Indigo\api\plugins\inchi\java\src\main\java" />
+    <Folder Include="indigo-node\Indigo\api\plugins\inchi\java\src\main\java\com" />
+    <Folder Include="indigo-node\Indigo\api\plugins\inchi\java\src\main\java\com\epam" />
+    <Folder Include="indigo-node\Indigo\api\plugins\inchi\java\src\main\java\com\epam\indigo" />
+    <Folder Include="indigo-node\Indigo\api\plugins\inchi\python" />
+    <Folder Include="indigo-node\Indigo\api\plugins\inchi\src" />
+    <Folder Include="indigo-node\Indigo\api\plugins\inchi\tests" />
+    <Folder Include="indigo-node\Indigo\api\plugins\inchi\tests\c" />
+    <Folder Include="indigo-node\Indigo\api\plugins\renderer" />
+    <Folder Include="indigo-node\Indigo\api\plugins\renderer\dotnet" />
+    <Folder Include="indigo-node\Indigo\api\plugins\renderer\dotnet\Properties" />
+    <Folder Include="indigo-node\Indigo\api\plugins\renderer\java" />
+    <Folder Include="indigo-node\Indigo\api\plugins\renderer\java\src" />
+    <Folder Include="indigo-node\Indigo\api\plugins\renderer\java\src\main" />
+    <Folder Include="indigo-node\Indigo\api\plugins\renderer\java\src\main\java" />
+    <Folder Include="indigo-node\Indigo\api\plugins\renderer\java\src\main\java\com" />
+    <Folder Include="indigo-node\Indigo\api\plugins\renderer\java\src\main\java\com\epam" />
+    <Folder Include="indigo-node\Indigo\api\plugins\renderer\java\src\main\java\com\epam\indigo" />
+    <Folder Include="indigo-node\Indigo\api\plugins\renderer\python" />
+    <Folder Include="indigo-node\Indigo\api\plugins\renderer\src" />
+    <Folder Include="indigo-node\Indigo\api\plugins\renderer\tests" />
+    <Folder Include="indigo-node\Indigo\api\plugins\renderer\tests\c" />
+    <Folder Include="indigo-node\Indigo\api\python" />
+    <Folder Include="indigo-node\Indigo\api\r" />
+    <Folder Include="indigo-node\Indigo\api\r\R" />
+    <Folder Include="indigo-node\Indigo\api\r\src" />
+    <Folder Include="indigo-node\Indigo\api\resources" />
+    <Folder Include="indigo-node\Indigo\api\src" />
+    <Folder Include="indigo-node\Indigo\api\tests" />
+    <Folder Include="indigo-node\Indigo\api\tests\c" />
+    <Folder Include="indigo-node\Indigo\bingo" />
+    <Folder Include="indigo-node\Indigo\bingo\bingo-core" />
+    <Folder Include="indigo-node\Indigo\bingo\bingo-core\src" />
+    <Folder Include="indigo-node\Indigo\bingo\bingo-core\src\core" />
+    <Folder Include="indigo-node\Indigo\bingo\bingo-core-c" />
+    <Folder Include="indigo-node\Indigo\bingo\bingo-core-c\src" />
+    <Folder Include="indigo-node\Indigo\bingo\oracle" />
+    <Folder Include="indigo-node\Indigo\bingo\oracle\setup" />
+    <Folder Include="indigo-node\Indigo\bingo\oracle\sql" />
+    <Folder Include="indigo-node\Indigo\bingo\oracle\sql\bingo" />
+    <Folder Include="indigo-node\Indigo\bingo\oracle\sql\system" />
+    <Folder Include="indigo-node\Indigo\bingo\oracle\src" />
+    <Folder Include="indigo-node\Indigo\bingo\oracle\src\oracle" />
+    <Folder Include="indigo-node\Indigo\bingo\postgres" />
+    <Folder Include="indigo-node\Indigo\bingo\postgres\sql" />
+    <Folder Include="indigo-node\Indigo\bingo\postgres\sql\9.0" />
+    <Folder Include="indigo-node\Indigo\bingo\postgres\sql\9.1" />
+    <Folder Include="indigo-node\Indigo\bingo\postgres\sql\9.2" />
+    <Folder Include="indigo-node\Indigo\bingo\postgres\sql\9.3" />
+    <Folder Include="indigo-node\Indigo\bingo\postgres\sql\9.4" />
+    <Folder Include="indigo-node\Indigo\bingo\postgres\sql\9.5" />
+    <Folder Include="indigo-node\Indigo\bingo\postgres\sql\common" />
+    <Folder Include="indigo-node\Indigo\bingo\postgres\src" />
+    <Folder Include="indigo-node\Indigo\bingo\postgres\src\pg_am" />
+    <Folder Include="indigo-node\Indigo\bingo\postgres\src\pg_common" />
+    <Folder Include="indigo-node\Indigo\bingo\postgres\src\pg_core" />
+    <Folder Include="indigo-node\Indigo\bingo\sqlserver" />
+    <Folder Include="indigo-node\Indigo\bingo\sqlserver\Properties" />
+    <Folder Include="indigo-node\Indigo\bingo\sqlserver\Resources" />
+    <Folder Include="indigo-node\Indigo\bingo\sqlserver\Resources\Win" />
+    <Folder Include="indigo-node\Indigo\bingo\sqlserver\Resources\Win\x64" />
+    <Folder Include="indigo-node\Indigo\bingo\sqlserver\Resources\Win\x86" />
+    <Folder Include="indigo-node\Indigo\bingo\sqlserver\Source" />
+    <Folder Include="indigo-node\Indigo\bingo\sqlserver\sql" />
+    <Folder Include="indigo-node\Indigo\bingo\sqlserver\sql\assembly" />
+    <Folder Include="indigo-node\Indigo\bingo\sqlserver\sqlserver_script_generator" />
+    <Folder Include="indigo-node\Indigo\bingo\sqlserver\sqlserver_script_generator\Properties" />
+    <Folder Include="indigo-node\Indigo\build" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\_CPack_Packages" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\_CPack_Packages\win64" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\_CPack_Packages\win64\ZIP" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\_CPack_Packages\win64\ZIP\indigo-libs-1.2.2beta.r102-win64" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\_CPack_Packages\win64\ZIP\indigo-libs-1.2.2beta.r102-win64\shared" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\_CPack_Packages\win64\ZIP\indigo-libs-1.2.2beta.r102-win64\shared\shared" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\_CPack_Packages\win64\ZIP\indigo-libs-1.2.2beta.r102-win64\shared\shared\Win" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\_CPack_Packages\win64\ZIP\indigo-libs-1.2.2beta.r102-win64\shared\shared\Win\x64" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\bingo" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\bingo\bingo" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\bingo\bingo\bingo-shared.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\bingo\bingo\bingo-shared.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\bingo\bingo\bingo-shared.dir\Release\bingo-shared.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\bingo\bingo\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\bingo\bingo\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\bingo\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\bingo\indigo" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\bingo\indigo\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\11ce123efe895c750cb7eb45e9e484d1" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\198dd57b68c2d7c13b27227e0767ca18" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\2c54ad064ebd42443c837a1c501869de" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\2cc40422d3417a6f5e50f65460335fb9" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\2f12d7a7eaa1fdcb17cbdb07263e8677" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\3.3.2" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\3.3.2\CompilerIdC" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\3.3.2\CompilerIdC\Debug" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\3.3.2\CompilerIdC\Debug\CompilerIdC.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\3.3.2\CompilerIdCXX" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\3.3.2\CompilerIdCXX\Debug" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\3.3.2\CompilerIdCXX\Debug\CompilerIdCXX.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\3b4cfa74a4319f7cd77fc8d7359bdb69" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\4e411156c3e87168dae71d9d9516c783" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\52f8631f0f5ee2fb95ddc91d1771f873" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\57719d03bbc48734a8ef50450401a95e" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\5b51b0dbf28a6d515616da881804ed5a" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\67764ed3f685f30e91a8482a85024f7c" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\67ec74b36a4d6bf80f2cfc2a08b4b7c2" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\73aa3a97f034fb9df8cd326a1ead3a92" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\78983d1edb60379be79c8a8007b9b09c" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\7a99132b392264b4dd7b05e871bc10e2" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\8d0fcf8ba9f27e2ad6f887e4b3b30553" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\acd01c0346fe2a38d468735514f87860" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\b7e06a4391badc425786d8737396d63b" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\bcac4285bedde6479b19ef0138989896" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\CMakeTmp" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\d433f942b0a1189ca63951e6f421a685" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\e834c69100af0a323475107a08f9c28d" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\eb80b8e87a2da34bf79603972da414b8" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\f72dbc877a249aaac3767aaaaf7b83ba" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\f945f328478e9566fce80a25e2fd8796" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\dist" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\dist\Win" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\dist\Win\x64" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\dist\Win\x64\lib" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\dist\Win\x64\lib\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\api" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\api\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\api\dlopen-test.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\api\dlopen-test.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\api\dlopen-test.dir\Release\dlopen-test.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\api\indigo-c-test-shared.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\api\indigo-c-test-shared.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\api\indigo-c-test-shared.dir\Release\indigo-c.E8B35EA2.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\api\indigoObj.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\api\indigoObj.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\api\indigoObj.dir\Release\indigoObj.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\api\indigo-shared.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\api\indigo-shared.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\api\indigo-shared.dir\Release\indigo-shared.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\api\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\common" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\common\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\common\common.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\common\common.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\common\common.dir\Release\common.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\common\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\graph" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\graph\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\graph\graph.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\graph\graph.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\graph\graph.dir\Release\graph.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\graph\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\layout" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\layout\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\layout\layout.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\layout\layout.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\layout\layout.dir\Release\layout.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\layout\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\molecule" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\molecule\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\molecule\molecule.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\molecule\molecule.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\molecule\molecule.dir\Release\molecule.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\molecule\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\reaction" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\reaction\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\reaction\reaction.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\reaction\reaction.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\reaction\reaction.dir\Release\reaction.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\reaction\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\third_party" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\third_party\inchi" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\third_party\inchi\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\third_party\inchi\inchi.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\third_party\inchi\inchi.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\third_party\inchi\inchi.dir\Release\inchi.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\third_party\inchi\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\tinyxml" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\tinyxml\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\tinyxml\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\tinyxml\tinyxml.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\tinyxml\tinyxml.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\tinyxml\tinyxml.dir\Release\tinyxml.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\zlib" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\zlib\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\zlib\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\zlib\z.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\zlib\z.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo\zlib\z.dir\Release\z.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-inchi" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-inchi\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-inchi\indigo" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-inchi\indigo\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-inchi\indigo-inchi" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-inchi\indigo-inchi\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-inchi\indigo-inchi\indigo-inchi-c-test-shared.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-inchi\indigo-inchi\indigo-inchi-c-test-shared.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-inchi\indigo-inchi\indigo-inchi-c-test-shared.dir\Release\indigo-i.D8D8AEF2.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-inchi\indigo-inchi\indigo-inchi-Obj.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-inchi\indigo-inchi\indigo-inchi-Obj.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-inchi\indigo-inchi\indigo-inchi-Obj.dir\Release\indigo-inchi-Obj.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-inchi\indigo-inchi\indigo-inchi-shared.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-inchi\indigo-inchi\indigo-inchi-shared.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-inchi\indigo-inchi\indigo-inchi-shared.dir\Release\indigo-i.DADC1D2A.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-inchi\indigo-inchi\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\cairo" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\cairo\cairo.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\cairo\cairo.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\cairo\cairo.dir\Release\cairo.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\cairo\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\cairo\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\indigo" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\indigo\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\pixman" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\pixman\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\pixman\pixman.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\pixman\pixman.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\pixman\pixman.dir\Release\pixman.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\pixman\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\png" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\png\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\png\png.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\png\png.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\png\png.dir\Release\png.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\png\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\render2d" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\render2d\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\render2d\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\render2d\render2d.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\render2d\render2d.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\render2d\render2d.dir\Release\render2d.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\renderer" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\renderer\CMakeFiles" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\renderer\indigo-renderer-c-test-shared.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\renderer\indigo-renderer-c-test-shared.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\renderer\indigo-renderer-c-test-shared.dir\Release\indigo-r.6805446A.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\renderer\indigo-renderer-Obj.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\renderer\indigo-renderer-Obj.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\renderer\indigo-renderer-Obj.dir\Release\indigo-r.66E52B65.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\renderer\indigo-renderer-shared.dir" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\renderer\indigo-renderer-shared.dir\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\renderer\indigo-renderer-shared.dir\Release\indigo-r.40E7DEBF.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\renderer\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\test.db" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\Testing" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\Testing\Temporary" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\x64" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\x64\Release" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\x64\Release\ALL_BUILD" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\x64\Release\ALL_BUILD\ALL_BUILD.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\x64\Release\INSTALL" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\x64\Release\INSTALL\INSTALL.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\x64\Release\PACKAGE" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\x64\Release\PACKAGE\PACKAGE.tlog" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\x64\Release\ZERO_CHECK" />
+    <Folder Include="indigo-node\Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\x64\Release\ZERO_CHECK\ZERO_CHECK.tlog" />
+    <Folder Include="indigo-node\Indigo\build_scripts" />
+    <Folder Include="indigo-node\Indigo\build_scripts\bingo" />
+    <Folder Include="indigo-node\Indigo\build_scripts\bingo-oracle" />
+    <Folder Include="indigo-node\Indigo\build_scripts\bingo-postgres" />
+    <Folder Include="indigo-node\Indigo\build_scripts\bingo-sqlserver" />
+    <Folder Include="indigo-node\Indigo\build_scripts\indigo" />
+    <Folder Include="indigo-node\Indigo\build_scripts\indigo-all" />
+    <Folder Include="indigo-node\Indigo\build_scripts\indigo-inchi" />
+    <Folder Include="indigo-node\Indigo\build_scripts\indigo-renderer" />
+    <Folder Include="indigo-node\Indigo\build_scripts\indigo-utils" />
+    <Folder Include="indigo-node\Indigo\common" />
+    <Folder Include="indigo-node\Indigo\common\base_c" />
+    <Folder Include="indigo-node\Indigo\common\base_cpp" />
+    <Folder Include="indigo-node\Indigo\common\cmake" />
+    <Folder Include="indigo-node\Indigo\common\gzip" />
+    <Folder Include="indigo-node\Indigo\common\hacks" />
+    <Folder Include="indigo-node\Indigo\common\java" />
+    <Folder Include="indigo-node\Indigo\common\java\common-controls" />
+    <Folder Include="indigo-node\Indigo\common\java\common-controls\nbproject" />
+    <Folder Include="indigo-node\Indigo\common\java\common-controls\src" />
+    <Folder Include="indigo-node\Indigo\common\java\common-controls\src\com" />
+    <Folder Include="indigo-node\Indigo\common\java\common-controls\src\com\epam" />
+    <Folder Include="indigo-node\Indigo\common\java\common-controls\src\com\epam\indigo" />
+    <Folder Include="indigo-node\Indigo\common\java\common-controls\src\com\epam\indigo\controls" />
+    <Folder Include="indigo-node\Indigo\common\java\common-controls\src\com\epam\indigo\controls\images" />
+    <Folder Include="indigo-node\Indigo\common\jna" />
+    <Folder Include="indigo-node\Indigo\common\lzw" />
+    <Folder Include="indigo-node\Indigo\common\math" />
+    <Folder Include="indigo-node\Indigo\common\oracle" />
+    <Folder Include="indigo-node\Indigo\common\unit_test" />
+    <Folder Include="indigo-node\Indigo\dist" />
+    <Folder Include="indigo-node\Indigo\graph" />
+    <Folder Include="indigo-node\Indigo\graph\src" />
+    <Folder Include="indigo-node\Indigo\layout" />
+    <Folder Include="indigo-node\Indigo\layout\patmake" />
+    <Folder Include="indigo-node\Indigo\layout\src" />
+    <Folder Include="indigo-node\Indigo\layout\src\templates" />
+    <Folder Include="indigo-node\Indigo\layout\src\templates\molecules" />
+    <Folder Include="indigo-node\Indigo\molecule" />
+    <Folder Include="indigo-node\Indigo\molecule\src" />
+    <Folder Include="indigo-node\Indigo\reaction" />
+    <Folder Include="indigo-node\Indigo\reaction\src" />
+    <Folder Include="indigo-node\Indigo\render2d" />
+    <Folder Include="indigo-node\Indigo\render2d\src" />
+    <Folder Include="indigo-node\Indigo\third_party" />
+    <Folder Include="indigo-node\Indigo\third_party\cairo-src" />
+    <Folder Include="indigo-node\Indigo\third_party\cairo-src\cairo" />
+    <Folder Include="indigo-node\Indigo\third_party\cairo-src\cairo\src" />
+    <Folder Include="indigo-node\Indigo\third_party\cairo-src\cairo\src\drm" />
+    <Folder Include="indigo-node\Indigo\third_party\cairo-src\cairo\src\skia" />
+    <Folder Include="indigo-node\Indigo\third_party\cairo-src\cairo\src\win32" />
+    <Folder Include="indigo-node\Indigo\third_party\cairo-src\pixman" />
+    <Folder Include="indigo-node\Indigo\third_party\cairo-src\pixman\pixman" />
+    <Folder Include="indigo-node\Indigo\third_party\inchi" />
+    <Folder Include="indigo-node\Indigo\third_party\inchi\inchi_dll" />
+    <Folder Include="indigo-node\Indigo\third_party\libpng-src" />
+    <Folder Include="indigo-node\Indigo\third_party\libpng-src\include" />
+    <Folder Include="indigo-node\Indigo\third_party\libpng-src\src" />
+    <Folder Include="indigo-node\Indigo\third_party\oci" />
+    <Folder Include="indigo-node\Indigo\third_party\oci\lib_generated" />
+    <Folder Include="indigo-node\Indigo\third_party\tinyxml" />
+    <Folder Include="indigo-node\Indigo\third_party\tinyxml\include" />
+    <Folder Include="indigo-node\Indigo\third_party\tinyxml\src" />
+    <Folder Include="indigo-node\Indigo\third_party\zlib-src" />
+    <Folder Include="indigo-node\Indigo\third_party\zlib-src\include" />
+    <Folder Include="indigo-node\Indigo\third_party\zlib-src\src" />
+    <Folder Include="indigo-node\Indigo\utils" />
+    <Folder Include="indigo-node\Indigo\utils\chemdiff" />
+    <Folder Include="indigo-node\Indigo\utils\chemdiff\examples" />
+    <Folder Include="indigo-node\Indigo\utils\chemdiff\META-INF" />
+    <Folder Include="indigo-node\Indigo\utils\chemdiff\nbproject" />
+    <Folder Include="indigo-node\Indigo\utils\chemdiff\src" />
+    <Folder Include="indigo-node\Indigo\utils\chemdiff\src\com" />
+    <Folder Include="indigo-node\Indigo\utils\chemdiff\src\com\epam" />
+    <Folder Include="indigo-node\Indigo\utils\chemdiff\src\com\epam\indigo" />
+    <Folder Include="indigo-node\Indigo\utils\chemdiff\src\com\epam\indigo\chemdiff" />
+    <Folder Include="indigo-node\Indigo\utils\indigo-cano" />
+    <Folder Include="indigo-node\Indigo\utils\indigo-deco" />
+    <Folder Include="indigo-node\Indigo\utils\indigo-depict" />
+    <Folder Include="indigo-node\Indigo\utils\legio" />
+    <Folder Include="indigo-node\Indigo\utils\legio\examples" />
+    <Folder Include="indigo-node\Indigo\utils\legio\examples\1_amides_stereo" />
+    <Folder Include="indigo-node\Indigo\utils\legio\examples\2_diels-alder" />
+    <Folder Include="indigo-node\Indigo\utils\legio\examples\3_symmetrical" />
+    <Folder Include="indigo-node\Indigo\utils\legio\examples\4_intramol" />
+    <Folder Include="indigo-node\Indigo\utils\legio\examples\5_glucose_mult" />
+    <Folder Include="indigo-node\Indigo\utils\legio\examples\6_tetra_stereo" />
+    <Folder Include="indigo-node\Indigo\utils\legio\examples\7_cistrans_stereo" />
+    <Folder Include="indigo-node\Indigo\utils\legio\examples\8_peptides" />
+    <Folder Include="indigo-node\Indigo\utils\legio\examples\9_Ugi4cc" />
+    <Folder Include="indigo-node\Indigo\utils\legio\META-INF" />
+    <Folder Include="indigo-node\Indigo\utils\legio\nbproject" />
+    <Folder Include="indigo-node\Indigo\utils\legio\src" />
+    <Folder Include="indigo-node\Indigo\utils\legio\src\com" />
+    <Folder Include="indigo-node\Indigo\utils\legio\src\com\epam" />
+    <Folder Include="indigo-node\Indigo\utils\legio\src\com\epam\indigo" />
+    <Folder Include="indigo-node\Indigo\utils\legio\src\com\epam\indigo\legio" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
