@@ -16,6 +16,7 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Compile Include="test.js" />
     <Content Include="gcom.txt" />
     <Content Include="README.md" />
     <Content Include="indigo-node\package.json" />
@@ -23,6 +24,7 @@
     <Content Include="indigo-node\README.md" />
     <Compile Include="indigo-node\build.js" />
     <Compile Include="indigo-node\configureIndigo.js" />
+    <Compile Include="indigo-node\indigo-api.js" />
     <Compile Include="indigo-node\indigo.js" />
     <Content Include="indigo-node\Indigo\README.md" />
     <Content Include="indigo-node\Indigo\api\CMakeLists.txt" />
