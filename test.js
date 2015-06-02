@@ -16,3 +16,7 @@
 var indigo = require("./indigo-node/indigo");
 
 console.log(indigo.getVersion());
+
+indigo._setSessionId();
+indigo._releaseSessionId();
+
