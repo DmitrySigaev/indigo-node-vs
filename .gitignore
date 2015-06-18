@@ -3,3 +3,4 @@
 /node_modules/
 /obj/
 *.ntvs_analysis.dat
+*.v11.suo

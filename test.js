@@ -14,8 +14,12 @@
 
 /* declaration of modules  */
 var assert = require('assert');
-var indigo = require("./indigo-node/indigo");
-var IndigoObject = require("./indigo-node/indigoObject");
+var path = require('path');
+var local = path.join.bind(path, __dirname);
+var indigo = require('./indigo-node/indigo');
+var IndigoObject = require('./indigo-node/indigoObject');
+require('./test-vs');
+
 
 try {
 	var obj = indigo.loadMolecule("AAA~");
@@ -23,6 +27,12 @@ try {
 } catch (e) {
 	console.log(e.message);
 }
+
+
+var obj = indigo.loadMolecule("C");
+obj.setXYZ(0.3, 9.023, 32.1);
+var arr = obj.xyz();
+indigo._releaseSessionId();
 
 console.log('Test loadMokecule from stream');
 console.log('should return IndigoObject');
@@ -35,13 +45,17 @@ indigo._setSessionId();
 indigo._releaseSessionId();
 assert.equal(0, indigo.countReferences());
 
+assert.equal(true, indigo.loadMolecule('AAA~') instanceof IndigoObject);
+assert.equal(true, indigo.loadMolecule('AAA~').hasOwnProperty('id'));
+assert.equal(-1, indigo.loadMolecule('AAA~').id);
+assert.equal(-1, indigo.loadMolecule('AAA~')['id']);
 
 var obj = indigo.loadMolecule("AAA~");
 var cnt = indigo.countReferences();
 console.log(cnt);
 var newobj = obj.clone();
 var cnt = indigo.countReferences();
-assert.equal(2, indigo.countReferences());
+assert.equal(0, indigo.countReferences());
 console.log(cnt);
 //printf("%s\n", indigoCanonicalSmiles(m));
 

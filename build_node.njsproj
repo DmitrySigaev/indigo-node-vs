@@ -6,7 +6,7 @@
     <ProjectGuid>{3e8cdcfe-05fb-439d-863f-34825a6c0393}</ProjectGuid>
     <ProjectHome />
     <ProjectView>ShowAllFiles</ProjectView>
-    <StartupFile>indigo-node\build.js</StartupFile>
+    <StartupFile>test.js</StartupFile>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
@@ -16,6 +16,12 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Compile Include="indigo-node\indigoObject.js" />
+    <Compile Include="indigo-node\logger.js" />
+    <Compile Include="indigo-node\test\count.test.js" />
+    <Compile Include="test-vs\index.js" />
+    <Compile Include="test-vs\vs.basic.test.js" />
+    <Compile Include="test-vs\vs.logger.test.js" />
     <Compile Include="test.js" />
     <Content Include="gcom.txt" />
     <Content Include="README.md" />
@@ -493,6 +499,8 @@
     <Folder Include="indigo-node\Indigo\utils\legio\src\com\epam" />
     <Folder Include="indigo-node\Indigo\utils\legio\src\com\epam\indigo" />
     <Folder Include="indigo-node\Indigo\utils\legio\src\com\epam\indigo\legio" />
+    <Folder Include="indigo-node\test\" />
+    <Folder Include="test-vs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
