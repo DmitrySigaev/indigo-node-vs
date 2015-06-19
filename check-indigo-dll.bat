@@ -1,0 +1,1 @@
+"%VS140COMNTOOLS%"..\..\VC\bin\dumpbin.exe .\indigo-node\shared\win32\x64\indigo.dll 
