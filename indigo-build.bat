@@ -11,16 +11,22 @@ node --version >>%log% 2>&1 || ECHO failed with return code %ERRORLEVEL%
 IF %ERRORLEVEL% NEQ 0 (
   REM do something here to address the error
 )
+
 echo python --version  >>%log% 2>&1
 python --version >>%log% 2>&1 || ECHO failed with return code %ERRORLEVEL%
+
+echo cmake --version  >>%log% 2>&1
+cmake --version >>%log% 2>&1 || ECHO failed with return code %ERRORLEVEL%
+
 echo npm --version >>%log% 2>&1
 npm --version >>%log% 2>&1 || ECHO failed with return code %ERRORLEVEL%
-
 echo cd ./indigo-node >>%log% 2>&1
 cd ./indigo-node
-
 echo npm install >>%log% 2>&1
-npm install >>%log% 2>&1  || ECHO failed with return code %ERRORLEVEL%
+::npm install >>%log% 2>&1  || ECHO failed with return code %ERRORLEVEL%
+echo node build.js >>%log% 2>&1
+node build.js >>%log% 2>&1
+
 type %log% 2>&1
 
 
