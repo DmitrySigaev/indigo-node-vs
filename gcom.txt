@@ -1,2 +1,3 @@
 cd indigo-node-vs\indigo-node>
 git.exe submodule update --init Indigo
+git submodule update --init --recursive
