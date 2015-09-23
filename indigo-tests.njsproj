@@ -26,6 +26,7 @@
     <Compile Include="test-vs\vs.buffer_string_load_iterate.test.js" />
     <Compile Include="test-vs\vs.cdx.test.js" />
     <Compile Include="test-vs\vs.logger.test.js" />
+    <Compile Include="test-vs\vs.rgroup.test.js" />
     <Compile Include="test-vs\vs.tau_en.test.js" />
     <Compile Include="test.js" />
     <Content Include="indigo-node\package.json" />
