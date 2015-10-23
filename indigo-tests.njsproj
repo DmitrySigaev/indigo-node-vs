@@ -19,6 +19,7 @@
     <Content Include="gcom.txt" />
     <Content Include="README.md" />
     <Compile Include="indigo-node\indigoObject.js" />
+    <Compile Include="indigo-node\indigo_renderer.js" />
     <Compile Include="indigo-node\logger.js" />
     <Compile Include="indigo-node\test\count.test.js" />
     <Compile Include="test-vs\index.js" />
@@ -27,6 +28,7 @@
     <Compile Include="test-vs\vs.cdx.test.js" />
     <Compile Include="test-vs\vs.com.test.js" />
     <Compile Include="test-vs\vs.logger.test.js" />
+    <Compile Include="test-vs\vs.renderer.test.js" />
     <Compile Include="test-vs\vs.rgroup.test.js" />
     <Compile Include="test-vs\vs.substruct.test.js" />
     <Compile Include="test-vs\vs.tau_en.test.js" />
