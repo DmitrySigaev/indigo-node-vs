@@ -18,6 +18,7 @@
   <ItemGroup>
     <Content Include="gcom.txt" />
     <Content Include="README.md" />
+    <Compile Include="indigo-node\bingo.js" />
     <Compile Include="indigo-node\indigoObject.js" />
     <Compile Include="indigo-node\indigo_inchi.js" />
     <Compile Include="indigo-node\indigo_renderer.js" />
@@ -25,6 +26,7 @@
     <Compile Include="indigo-node\test\count.test.js" />
     <Compile Include="test-vs\index.js" />
     <Compile Include="test-vs\vs.basic.test.js" />
+    <Compile Include="test-vs\vs.bingo.test.js" />
     <Compile Include="test-vs\vs.buffer_string_load_iterate.test.js" />
     <Compile Include="test-vs\vs.cdx.test.js" />
     <Compile Include="test-vs\vs.com.test.js" />
