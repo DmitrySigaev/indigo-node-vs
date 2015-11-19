@@ -19,6 +19,7 @@
     <Content Include="gcom.txt" />
     <Content Include="README.md" />
     <Compile Include="indigo-node\bingo.js" />
+    <Compile Include="indigo-node\bingoObject.js" />
     <Compile Include="indigo-node\indigoObject.js" />
     <Compile Include="indigo-node\indigo_inchi.js" />
     <Compile Include="indigo-node\indigo_renderer.js" />
