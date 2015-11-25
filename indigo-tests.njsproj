@@ -27,6 +27,7 @@
     <Compile Include="indigo-node\test\count.test.js" />
     <Compile Include="test-vs\index.js" />
     <Compile Include="test-vs\vs.basic.test.js" />
+    <Compile Include="test-vs\vs.bingo.basic.test.js" />
     <Compile Include="test-vs\vs.bingo.test.js" />
     <Compile Include="test-vs\vs.buffer_string_load_iterate.test.js" />
     <Compile Include="test-vs\vs.cdx.test.js" />
