@@ -33,6 +33,7 @@
     <Compile Include="test-vs\vs.cdx.test.js" />
     <Compile Include="test-vs\vs.com.test.js" />
     <Compile Include="test-vs\vs.inchi.test.js" />
+    <Compile Include="test-vs\vs.indigo.save.test.js" />
     <Compile Include="test-vs\vs.indigo.sdf.test.js" />
     <Compile Include="test-vs\vs.logger.test.js" />
     <Compile Include="test-vs\vs.renderer.test.js" />
