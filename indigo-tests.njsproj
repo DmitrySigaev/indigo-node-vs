@@ -20,6 +20,7 @@
     <Content Include="README.md" />
     <Compile Include="indigo-node\bingo.js" />
     <Compile Include="indigo-node\bingoObject.js" />
+    <Compile Include="indigo-node\indigoException.js" />
     <Compile Include="indigo-node\indigoObject.js" />
     <Compile Include="indigo-node\indigo_inchi.js" />
     <Compile Include="indigo-node\indigo_renderer.js" />
@@ -36,6 +37,7 @@
     <Compile Include="test-vs\vs.indigo.save.test.js" />
     <Compile Include="test-vs\vs.indigo.sdf.test.js" />
     <Compile Include="test-vs\vs.logger.test.js" />
+    <Compile Include="test-vs\vs.renderer.align.test.js" />
     <Compile Include="test-vs\vs.renderer.test.js" />
     <Compile Include="test-vs\vs.rgroup.test.js" />
     <Compile Include="test-vs\vs.substruct.test.js" />
